@@ -1,0 +1,16 @@
+[package]
+name = "nigelthecreator_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+axum = '0.6.0-rc.1'
+axum-extra = { version = '0.4.0-rc.1', features = ["spa"] }
+tokio = { version = "1.21.1", features = ["full"] }
+tower-http = { version = "0.3.4", features = ["fs", "trace"] }
+tower = '0.4.1'
+tracing = "0.1.36"
+tracing-subscriber = { version = "0.3.15", features = ["env-filter"] }
